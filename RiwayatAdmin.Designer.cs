@@ -57,6 +57,7 @@ namespace rental_mobiV2
             this.dtAwal = new System.Windows.Forms.DateTimePicker();
             this.dtAkhir = new System.Windows.Forms.DateTimePicker();
             this.btnExportPdf = new System.Windows.Forms.Button();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -66,10 +67,12 @@ namespace rental_mobiV2
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransaksiTerbaru)).BeginInit();
+            this.panel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLogout
             // 
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogout.BackColor = System.Drawing.Color.Red;
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogout.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -172,6 +175,7 @@ namespace rental_mobiV2
             this.label4.Size = new System.Drawing.Size(67, 19);
             this.label4.TabIndex = 4;
             this.label4.Text = "Pelanggan";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // panel10
             // 
@@ -265,7 +269,7 @@ namespace rental_mobiV2
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(34, 92);
+            this.label6.Location = new System.Drawing.Point(34, 26);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(243, 42);
             this.label6.TabIndex = 14;
@@ -273,8 +277,11 @@ namespace rental_mobiV2
             // 
             // dgvTransaksiTerbaru
             // 
+            this.dgvTransaksiTerbaru.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvTransaksiTerbaru.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTransaksiTerbaru.Location = new System.Drawing.Point(27, 188);
+            this.dgvTransaksiTerbaru.Location = new System.Drawing.Point(27, 122);
             this.dgvTransaksiTerbaru.Name = "dgvTransaksiTerbaru";
             this.dgvTransaksiTerbaru.Size = new System.Drawing.Size(743, 238);
             this.dgvTransaksiTerbaru.TabIndex = 15;
@@ -283,16 +290,17 @@ namespace rental_mobiV2
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Poppins", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(613, 176);
+            this.label8.Location = new System.Drawing.Point(613, 110);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 16);
             this.label8.TabIndex = 7;
             // 
             // btnFilter
             // 
+            this.btnFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFilter.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnFilter.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFilter.Location = new System.Drawing.Point(726, 149);
+            this.btnFilter.Location = new System.Drawing.Point(726, 83);
             this.btnFilter.Name = "btnFilter";
             this.btnFilter.Size = new System.Drawing.Size(45, 33);
             this.btnFilter.TabIndex = 6;
@@ -302,9 +310,10 @@ namespace rental_mobiV2
             // 
             // txtSearch
             // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtSearch.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(552, 152);
+            this.txtSearch.Location = new System.Drawing.Point(552, 86);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(168, 30);
@@ -314,7 +323,7 @@ namespace rental_mobiV2
             // dtAwal
             // 
             this.dtAwal.CalendarFont = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtAwal.Location = new System.Drawing.Point(27, 162);
+            this.dtAwal.Location = new System.Drawing.Point(27, 96);
             this.dtAwal.Name = "dtAwal";
             this.dtAwal.Size = new System.Drawing.Size(199, 20);
             this.dtAwal.TabIndex = 17;
@@ -323,7 +332,7 @@ namespace rental_mobiV2
             // dtAkhir
             // 
             this.dtAkhir.CalendarFont = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtAkhir.Location = new System.Drawing.Point(232, 162);
+            this.dtAkhir.Location = new System.Drawing.Point(232, 96);
             this.dtAkhir.Name = "dtAkhir";
             this.dtAkhir.Size = new System.Drawing.Size(200, 20);
             this.dtAkhir.TabIndex = 18;
@@ -331,9 +340,10 @@ namespace rental_mobiV2
             // 
             // btnExportPdf
             // 
+            this.btnExportPdf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExportPdf.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExportPdf.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExportPdf.Location = new System.Drawing.Point(652, 101);
+            this.btnExportPdf.Location = new System.Drawing.Point(652, 35);
             this.btnExportPdf.Name = "btnExportPdf";
             this.btnExportPdf.Size = new System.Drawing.Size(118, 29);
             this.btnExportPdf.TabIndex = 19;
@@ -341,19 +351,29 @@ namespace rental_mobiV2
             this.btnExportPdf.UseVisualStyleBackColor = true;
             this.btnExportPdf.Click += new System.EventHandler(this.btnExportPdf_Click);
             // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.label6);
+            this.panel13.Controls.Add(this.btnExportPdf);
+            this.panel13.Controls.Add(this.btnFilter);
+            this.panel13.Controls.Add(this.dtAkhir);
+            this.panel13.Controls.Add(this.dgvTransaksiTerbaru);
+            this.panel13.Controls.Add(this.dtAwal);
+            this.panel13.Controls.Add(this.label8);
+            this.panel13.Controls.Add(this.txtSearch);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel13.Location = new System.Drawing.Point(0, 77);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(800, 373);
+            this.panel13.TabIndex = 20;
+            this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.panel13_Paint);
+            // 
             // RiwayatAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnExportPdf);
-            this.Controls.Add(this.dtAkhir);
-            this.Controls.Add(this.dtAwal);
-            this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.dgvTransaksiTerbaru);
-            this.Controls.Add(this.btnFilter);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel1);
             this.Name = "RiwayatAdmin";
             this.Text = "RiwayatAdmin";
@@ -372,8 +392,9 @@ namespace rental_mobiV2
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransaksiTerbaru)).EndInit();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -405,5 +426,6 @@ namespace rental_mobiV2
         private System.Windows.Forms.DateTimePicker dtAwal;
         private System.Windows.Forms.DateTimePicker dtAkhir;
         private System.Windows.Forms.Button btnExportPdf;
+        private System.Windows.Forms.Panel panel13;
     }
 }

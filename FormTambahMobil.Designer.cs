@@ -31,6 +31,8 @@ namespace rental_mobiV2
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.btnBatal = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -38,7 +40,6 @@ namespace rental_mobiV2
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtHarga = new System.Windows.Forms.TextBox();
             this.txtPlat = new System.Windows.Forms.TextBox();
             this.txtTahun = new System.Windows.Forms.TextBox();
@@ -46,6 +47,7 @@ namespace rental_mobiV2
             this.txtMerk = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,11 +56,12 @@ namespace rental_mobiV2
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(409, 290);
+            this.panel1.Size = new System.Drawing.Size(571, 275);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.btnSimpan);
             this.panel2.Controls.Add(this.btnBatal);
             this.panel2.Controls.Add(this.label6);
@@ -66,7 +69,6 @@ namespace rental_mobiV2
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtHarga);
             this.panel2.Controls.Add(this.txtPlat);
             this.panel2.Controls.Add(this.txtTahun);
@@ -75,15 +77,36 @@ namespace rental_mobiV2
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(409, 290);
+            this.panel2.Size = new System.Drawing.Size(571, 275);
             this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Lime;
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(571, 46);
+            this.panel3.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(170, -2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(210, 48);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Tambah Mobil";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnSimpan
             // 
             this.btnSimpan.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnSimpan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSimpan.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSimpan.Location = new System.Drawing.Point(298, 199);
+            this.btnSimpan.Location = new System.Drawing.Point(475, 215);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(59, 23);
             this.btnSimpan.TabIndex = 13;
@@ -96,7 +119,7 @@ namespace rental_mobiV2
             this.btnBatal.BackColor = System.Drawing.Color.Red;
             this.btnBatal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBatal.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBatal.Location = new System.Drawing.Point(233, 199);
+            this.btnBatal.Location = new System.Drawing.Point(410, 215);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(59, 23);
             this.btnBatal.TabIndex = 12;
@@ -108,7 +131,7 @@ namespace rental_mobiV2
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(65, 179);
+            this.label6.Location = new System.Drawing.Point(266, 195);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 22);
             this.label6.TabIndex = 11;
@@ -118,7 +141,7 @@ namespace rental_mobiV2
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(230, 118);
+            this.label5.Location = new System.Drawing.Point(431, 134);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 22);
             this.label5.TabIndex = 10;
@@ -128,7 +151,7 @@ namespace rental_mobiV2
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(64, 118);
+            this.label4.Location = new System.Drawing.Point(265, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 22);
             this.label4.TabIndex = 9;
@@ -138,7 +161,7 @@ namespace rental_mobiV2
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(230, 66);
+            this.label3.Location = new System.Drawing.Point(431, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 22);
             this.label3.TabIndex = 8;
@@ -148,26 +171,16 @@ namespace rental_mobiV2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(64, 66);
+            this.label2.Location = new System.Drawing.Point(265, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 22);
             this.label2.TabIndex = 7;
             this.label2.Text = "Merk";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(99, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 48);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Tambah Mobil";
-            // 
             // txtHarga
             // 
             this.txtHarga.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtHarga.Location = new System.Drawing.Point(67, 199);
+            this.txtHarga.Location = new System.Drawing.Point(268, 215);
             this.txtHarga.Name = "txtHarga";
             this.txtHarga.Size = new System.Drawing.Size(100, 20);
             this.txtHarga.TabIndex = 4;
@@ -175,7 +188,7 @@ namespace rental_mobiV2
             // txtPlat
             // 
             this.txtPlat.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtPlat.Location = new System.Drawing.Point(233, 138);
+            this.txtPlat.Location = new System.Drawing.Point(434, 154);
             this.txtPlat.Name = "txtPlat";
             this.txtPlat.Size = new System.Drawing.Size(100, 20);
             this.txtPlat.TabIndex = 3;
@@ -183,7 +196,7 @@ namespace rental_mobiV2
             // txtTahun
             // 
             this.txtTahun.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtTahun.Location = new System.Drawing.Point(67, 138);
+            this.txtTahun.Location = new System.Drawing.Point(268, 154);
             this.txtTahun.Name = "txtTahun";
             this.txtTahun.Size = new System.Drawing.Size(100, 20);
             this.txtTahun.TabIndex = 2;
@@ -191,7 +204,7 @@ namespace rental_mobiV2
             // txtModel
             // 
             this.txtModel.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtModel.Location = new System.Drawing.Point(233, 86);
+            this.txtModel.Location = new System.Drawing.Point(434, 102);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(100, 20);
             this.txtModel.TabIndex = 1;
@@ -199,7 +212,7 @@ namespace rental_mobiV2
             // txtMerk
             // 
             this.txtMerk.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtMerk.Location = new System.Drawing.Point(67, 86);
+            this.txtMerk.Location = new System.Drawing.Point(268, 102);
             this.txtMerk.Name = "txtMerk";
             this.txtMerk.Size = new System.Drawing.Size(100, 20);
             this.txtMerk.TabIndex = 0;
@@ -208,7 +221,7 @@ namespace rental_mobiV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 290);
+            this.ClientSize = new System.Drawing.Size(571, 275);
             this.Controls.Add(this.panel1);
             this.Name = "FormTambahMobil";
             this.Text = "FormTambahMobil";
@@ -216,6 +229,8 @@ namespace rental_mobiV2
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -237,5 +252,6 @@ namespace rental_mobiV2
         private System.Windows.Forms.TextBox txtTahun;
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.TextBox txtMerk;
+        private System.Windows.Forms.Panel panel3;
     }
 }

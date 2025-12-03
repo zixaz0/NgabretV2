@@ -279,6 +279,8 @@ namespace rental_mobiV2
             // 
             // label11
             // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(28, 182);
@@ -289,6 +291,8 @@ namespace rental_mobiV2
             // 
             // cmbAddRole
             // 
+            this.cmbAddRole.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbAddRole.BackColor = System.Drawing.SystemColors.Menu;
             this.cmbAddRole.FormattingEnabled = true;
             this.cmbAddRole.Items.AddRange(new object[] {
@@ -301,6 +305,8 @@ namespace rental_mobiV2
             // 
             // txtAddPassword
             // 
+            this.txtAddPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.txtAddPassword.BackColor = System.Drawing.SystemColors.Menu;
             this.txtAddPassword.Location = new System.Drawing.Point(22, 144);
             this.txtAddPassword.Name = "txtAddPassword";
@@ -310,6 +316,8 @@ namespace rental_mobiV2
             // 
             // txtAddUsername
             // 
+            this.txtAddUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.txtAddUsername.BackColor = System.Drawing.SystemColors.Menu;
             this.txtAddUsername.Location = new System.Drawing.Point(22, 79);
             this.txtAddUsername.Name = "txtAddUsername";
@@ -318,6 +326,8 @@ namespace rental_mobiV2
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(22, 118);
@@ -329,6 +339,8 @@ namespace rental_mobiV2
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(18, 53);
@@ -339,6 +351,8 @@ namespace rental_mobiV2
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(16, 19);
@@ -349,6 +363,8 @@ namespace rental_mobiV2
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(277, 145);
             this.dataGridView1.Name = "dataGridView1";
@@ -382,6 +398,7 @@ namespace rental_mobiV2
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(256, 373);
             this.panel13.TabIndex = 60;
+            this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.panel13_Paint);
             // 
             // KelolaUserAdmin
             // 

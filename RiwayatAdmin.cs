@@ -172,10 +172,19 @@ namespace rental_mobiV2
 
                             // Judul
                             Paragraph title = new Paragraph(
-                            "Laporan Riwayat Transaksi\n\n",
-                            iTextSharp.text.FontFactory.GetFont("Arial", 16, iTextSharp.text.Font.BOLD));
+                                "Laporan Riwayat Transaksi Ngabret.id\n",
+                                iTextSharp.text.FontFactory.GetFont("Arial", 16, iTextSharp.text.Font.BOLD));
                             title.Alignment = Element.ALIGN_CENTER;
                             pdfDoc.Add(title);
+
+                            // Periode (dipindah ke bawah judul)
+                            string periodeText = $"Periode: {dtAwal.Value:dd-MM-yyyy} s/d {dtAkhir.Value:dd-MM-yyyy}";
+                            Paragraph periodeParagraph = new Paragraph(
+                                periodeText + "\n\n",
+                                FontFactory.GetFont("Arial", 12, iTextSharp.text.Font.NORMAL)
+                            );
+                            periodeParagraph.Alignment = Element.ALIGN_CENTER;
+                            pdfDoc.Add(periodeParagraph);
 
                             // Buat tabel sesuai jumlah kolom DataGridView
                             PdfPTable pdfTable = new PdfPTable(dgvTransaksiTerbaru.Columns.Count);
@@ -212,13 +221,14 @@ namespace rental_mobiV2
                                             cellValue = num.ToString("N0", new System.Globalization.CultureInfo("id-ID"));
                                         }
 
-                                        // Tambahkan ke tabel PDF (pakai pdfTable, bukan table)
+                                        // Tambahkan ke tabel PDF
                                         pdfTable.AddCell(new Phrase(cellValue ?? string.Empty, fontNormal));
                                     }
                                 }
                             }
 
                             pdfDoc.Add(pdfTable);
+
                             pdfDoc.Close();
                             stream.Close();
                         }
@@ -235,6 +245,18 @@ namespace rental_mobiV2
             {
                 MessageBox.Show("Tidak ada data untuk diexport!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            PelangganAdmin pelangganForm = new PelangganAdmin(username);
+            pelangganForm.Show();
+            this.Hide(); // sembunyiin form sekarang
+        }
+
+        private void panel13_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

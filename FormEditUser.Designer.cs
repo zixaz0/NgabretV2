@@ -39,11 +39,13 @@ namespace rental_mobiV2
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.btnBatal = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtEditId
             // 
-            this.txtEditId.Location = new System.Drawing.Point(273, 17);
+            this.txtEditId.Location = new System.Drawing.Point(343, 205);
             this.txtEditId.Name = "txtEditId";
             this.txtEditId.ReadOnly = true;
             this.txtEditId.Size = new System.Drawing.Size(35, 20);
@@ -126,7 +128,7 @@ namespace rental_mobiV2
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(94, 9);
+            this.label15.Location = new System.Drawing.Point(107, 3);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(153, 34);
             this.label15.TabIndex = 69;
@@ -145,11 +147,22 @@ namespace rental_mobiV2
             this.btnBatal.UseVisualStyleBackColor = false;
             this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(377, 35);
+            this.panel1.TabIndex = 79;
+            // 
             // FormEditUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 225);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnBatal);
             this.Controls.Add(this.txtEditId);
             this.Controls.Add(this.btnSimpanEdit);
@@ -159,10 +172,11 @@ namespace rental_mobiV2
             this.Controls.Add(this.txtEditUsername);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
             this.Name = "FormEditUser";
             this.Text = "FormEditUser";
             this.Load += new System.EventHandler(this.FormEditUser_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +194,6 @@ namespace rental_mobiV2
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnBatal;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -168,7 +168,9 @@ namespace rental_mobiV2
 
         private void label4_Click(object sender, EventArgs e)
         {
-
+            PelangganAdmin pelangganForm = new PelangganAdmin(username);
+            pelangganForm.Show();
+            this.Hide(); // sembunyiin form sekarang
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -183,6 +185,18 @@ namespace rental_mobiV2
             RiwayatAdmin PelangganForm = new RiwayatAdmin(username);
             PelangganForm.Show();
             this.Hide(); // sembunyiin form sekarang
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            PelangganAdmin pelangganForm = new PelangganAdmin(username);
+            pelangganForm.Show();
+            this.Hide(); // sembunyiin form sekarang
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

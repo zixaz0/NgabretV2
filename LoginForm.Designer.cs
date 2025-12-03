@@ -50,16 +50,18 @@ namespace rental_mobiV2
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(337, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(463, 450);
+            this.panel2.Size = new System.Drawing.Size(463, 482);
             this.panel2.TabIndex = 3;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::rental_mobiV2.Properties.Resources.Desain_tanpa_judul;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(463, 450);
+            this.pictureBox1.Size = new System.Drawing.Size(463, 482);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -76,7 +78,7 @@ namespace rental_mobiV2
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(339, 450);
+            this.panel1.Size = new System.Drawing.Size(339, 482);
             this.panel1.TabIndex = 2;
             // 
             // checkBox1
@@ -158,7 +160,7 @@ namespace rental_mobiV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 482);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "LoginForm";
